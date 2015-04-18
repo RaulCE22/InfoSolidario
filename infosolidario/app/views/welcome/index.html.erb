@@ -1,0 +1,52 @@
+<div class="row text-center">
+	<div class="col-sm-3" style="background-color: #fff">
+		<h4>Ultimas aportaciones</h4><br>
+		<%@producto.each do |l| %>
+			
+			<img src="assets/<%=l.img%>" width="30%" height="30%" class="img-responsive center-block" alt="">
+
+			<%=l.description%><br>
+
+			Creado: <%=l.created_at%>
+
+			<br>
+		<%end%>
+	</div>
+	<div class="col-sm-6">
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="//www.youtube.com/embed/IibNqwndtCE"></iframe>
+		</div>
+		<br><br><br><br>
+		<div class="row">
+			<div class="col-xs-4">
+				<img src="assets/1.jpg" class="img-responsive" alt="">
+				<img src="assets/2.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-xs-4">
+				<img src="assets/3.jpg" class="img-responsive" alt="">
+				<img src="assets/4.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-xs-4">
+				<img src="assets/5.jpg" class="img-responsive" alt="">
+				<img src="assets/6.jpg" class="img-responsive" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		
+		<h4>Ultimas donaciones</h4><br>
+		<%@recurso.each do |l| %>
+			
+			<img src="assets/<%=l.img%>" width="30%" height="30%" class="img-responsive center-block" alt="">
+
+			<%=l.description%><br>
+
+			Creado: <%=l.created_at%>
+
+			<br>
+		<%end%>
+	</div>
+</div>
+<div class="row">
+	<img src="assets/footer.png" class="img-responsive" alt="">
+</div>
